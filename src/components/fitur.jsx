@@ -45,7 +45,7 @@ export default function Index() {
                     {fiturCard.map((data, i) => (
                         <div key={i} align="center" className="bg-white rounded-xl p-3 w-[240px] xl:w-[400px] xl:rounded-3xl xl:p-10 hover:scale-105 transition-all duration-500">
                             <div className="h-[150px] w-[200px] flex flex-col items-center justify-center xl:w-[240px] xl:h-[240px]">
-                                <Image src={data.image} width={80} height={80} className="xl:w-[120px]" alt="feature"/>
+                                <Image src={data.image} width={80} height={80} className="xl:w-[120px] w-auto h-auto" alt="feature"/>
                             </div>
                             <h3 className="font-semibold xl:text-[32px]">{data.name}</h3>
                             <h3 className="text-[14px] mt-4 xl:text-2xl">{data.desc}</h3>

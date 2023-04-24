@@ -24,8 +24,8 @@ export default function Index() {
                         <h3 className="font-semibold md:text-xl lg:text-3xl xl:text-5xl">Unduh<span className="text-primary"> AG FORCE </span>Sekarang</h3>
                         <h3 className="text-[10px] md:text-base lg:text-xl xl:text-2xl">Gratis aplikasinya, kerja semakin aman dan tenang.</h3>
                         <div className="flex items-center justify-center gap-2">
-                            <Image src={'/appStore.png'} width={400} height={0} alt="" className="w-[90px] md:w-[160px] lg:w-[220px] xl:w-[280px] cursor-pointer"/>
-                            <Image src={'/googlePlay.png'} width={400} height={0} alt="" className="w-[90px] md:w-[160px] lg:w-[220px] xl:w-[280px] cursor-pointer"/>
+                            <Image src={'/appStore.svg'} width={400} height={0} alt="" className="w-[90px] md:w-[160px] lg:w-[220px] xl:w-[280px] cursor-pointer"/>
+                            <Image src={'/googlePlay.svg'} width={400} height={0} alt="" className="w-[90px] md:w-[160px] lg:w-[220px] xl:w-[280px] cursor-pointer"/>
                         </div>
                     </div>
                     <Image src={'/kontak-right.png'} width={400} height={0} alt="image-right" className="w-[72px] md:w-[160px] lg:w-[240px]"/>

@@ -9,7 +9,10 @@ module.exports = {
     extend: {
       colors:{
         primary:"#00458E",
-      }
+      },
+      fontFamily:{
+        'lato':['lato']
+      },
     },
   },
   plugins: [],
