@@ -2,7 +2,7 @@ import Image from "next/image"
 export default function Index() {
     return (
         <>
-            <div className="space-y-5 container mx-auto lg:grid lg:grid-cols-2 lg:gap">
+            <div className="space-y-5 container mx-auto lg:grid lg:grid-cols-2 lg:gap lg:h-screen flex flex-col items-center">
                 <div className="space-y-6">
                     <h3 className="text-center text-[22px] font-semibold lg:text-[64px] lg:text-left">
                         Aman dengan <span className="text-primary">AG FORCE</span>

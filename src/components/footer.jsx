@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function name() {
     return (
-        <div className="bg-primary w-full">
+        <div className="bg-primary w-full h-1/2 flex flex-col items-center">
             <div className="container mx-auto py-8 px-2">
                 <div className="flex items-center justify-between">
                     <div className="bg-white">
-                        <Image src={'/logo.png'} width={400} height={0} alt="" className="w-[74px] lg:w-[140px]"/>
+                        <Image src={'/logo.png'} width={400} height={100} alt="" className="w-[74px] h-auto lg:w-[140px]"/>
                     </div>
                     <button className="bg-white rounded-full py-2 px-3 text-primary font-semibold">
                         Unduh Sekarang

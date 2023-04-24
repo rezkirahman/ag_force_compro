@@ -37,20 +37,22 @@ export default function Index() {
 
     return (
         <>
-            <div className="bg-blue-50 py-[35px] px-4">
-                <h3 className="text-center text-[22px] font-semibold xl:text-5xl xl:mb-10">
-                    Fitur andalan <span className="text-primary">AG FORCE</span>
-                </h3>
-                <div className="flex gap-6 overflow-auto mx-auto py-4 md:w-full md:flex-wrap md:justify-center">
-                    {fiturCard.map((data, i) => (
-                        <div key={i} align="center" className="bg-white rounded-xl p-3 w-[240px] xl:w-[400px] xl:rounded-3xl xl:p-10 hover:scale-105 transition-all duration-500">
-                            <div className="h-[150px] w-[200px] flex flex-col items-center justify-center xl:w-[240px] xl:h-[240px]">
-                                <Image src={data.image} width={80} height={80} className="xl:w-[120px] w-auto h-auto" alt="feature"/>
+            <div className="bg-blue-50 py-[35px] px-4 lg:h-screen flex flex-col items-center">
+                <div className="container m-auto">
+                    <h3 className="text-center text-[22px] font-semibold xl:text-5xl xl:mb-10">
+                        Fitur andalan <span className="text-primary">AG FORCE</span>
+                    </h3>
+                    <div className="flex gap-6 overflow-auto mx-auto py-4 md:w-full md:flex-wrap md:justify-center">
+                        {fiturCard.map((data, i) => (
+                            <div key={i} align="center" className="bg-white rounded-xl p-3 w-[240px] xl:w-[400px] xl:rounded-3xl xl:p-10 hover:scale-105 transition-all duration-500">
+                                <div className="h-[150px] w-[200px] flex flex-col items-center justify-center xl:w-[120px] xl:h-[120px]">
+                                    <Image src={data.image} width={80} height={80} className="xl:w-[80px] w-auto h-auto" alt="feature" />
+                                </div>
+                                <h3 className="font-semibold xl:text-[32px]">{data.name}</h3>
+                                <h3 className="text-[14px] mt-4 xl:text-2xl">{data.desc}</h3>
                             </div>
-                            <h3 className="font-semibold xl:text-[32px]">{data.name}</h3>
-                            <h3 className="text-[14px] mt-4 xl:text-2xl">{data.desc}</h3>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </>
