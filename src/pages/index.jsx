@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className='text-slate-600 space-y-6'>
+    <main className='text-slate-600 space-y-6 xl:space-y-20'>
       <Navbar />
       <Beranda />
       <Tentang />
