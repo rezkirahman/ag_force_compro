@@ -94,7 +94,7 @@ export default function Index() {
                         <div>
                             <strong className="text-xl text-primary">11. DMCA Notice and Procedure for Copyright Infringement Claims</strong>
                             <p className="mt-2">You may submit a notification pursuant to the Digital Millennium Copyright Act (DMCA) by providing our Copyright Agent with the following information in writing (see 17 U.S.C 512(c)(3) for further detail):</p>
-                            <ul className="list-decimal ml-6 my-2">
+                            <ul className="list-d ml-6 my-2">
                                 <li>an electronic or physical signature of the person authorized to act on behalf of the owner of the copyright&rsquo;s interest;</li>
                                 <li>a description of the copyrighted work that you claim has been infringed, including the URL (i.e., web page address) of the location where the copyrighted work exists or a copy of the copyrighted work;</li>
                                 <li>identification of the URL or other specific location on Service where the material that you claim is infringing is located;</li>
