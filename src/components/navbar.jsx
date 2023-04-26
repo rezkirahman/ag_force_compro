@@ -40,7 +40,7 @@ export default function Index() {
                             </Link>
                         ))}
                         <Link
-                            href={isAndroid ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : (isIOS ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : '#kontak')}
+                            href={isAndroid ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : (isIOS ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : '#kontak')}
                             scroll={false}
                         >
                             <button
