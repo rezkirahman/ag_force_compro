@@ -2,9 +2,10 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { isAndroid, isIOS } from "react-device-detect";
 
 export default function name() {
-    const router = useRouter
+    const router = useRouter()
     return (
         <div className="bg-primary w-full h-1/2 flex flex-col items-center">
             <div className="container mx-auto py-8 px-2">
@@ -12,9 +13,14 @@ export default function name() {
                     <div className="bg-white">
                         <Image src={'/logo.png'} width={400} height={100} alt="" className="w-[74px] h-auto lg:w-[140px]" />
                     </div>
-                    <button className="bg-white rounded-full py-4 px-6 ring-2 ring-white text-primary font-semibold hover:bg-primary hover:text-white transition-all duration-300">
-                        Unduh Sekarang
-                    </button>
+                    <Link
+                        href={isAndroid ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : (isIOS ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : '#kontak')}
+                        scroll={false}
+                    >
+                        <button className="bg-white rounded-full py-4 px-6 ring-2 ring-white text-primary font-semibold hover:bg-primary hover:text-white transition-all duration-300">
+                            Unduh Sekarang
+                        </button>
+                    </Link>
                 </div>
                 <div className="space-y-5 lg:space-y-0 text-white mt-8 lg:flex lg:items-center lg:justify-between">
                     <Link
@@ -39,10 +45,10 @@ export default function name() {
                             admin.mail@aig-id.com
                         </h3>
                     </Link>
-                    <div onClick={()=>router.push('/terms-of-service')} className="cursor-pointer">
+                    <div onClick={() => router.push('/terms-of-service')} className="cursor-pointer">
                         <h3 className="text-[14px] hover:underline">Terms of Service</h3>
                     </div>
-                    <div onClick={()=>router.push('/terms-of-service')} className="cursor-pointer">
+                    <div onClick={() => router.push('/terms-of-service')} className="cursor-pointer">
                         <h3 className="text-[14px] hover:underline">Kebijakan Privasi</h3>
                     </div>
                 </div>
