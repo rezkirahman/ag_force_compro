@@ -14,7 +14,7 @@ export default function Index() {
                     </div>
                 </div>
                 <div className="">
-                    <Image src={'/tentang.png'} width={300} height={0} className="w-4/5 lg:w-4/5 mx-auto grow" alt="cs" />
+                    <Image src={'/tentang.png'} priority width={300} height={0} className="w-4/5 lg:w-4/5 mx-auto grow" alt="cs" />
                 </div>
             </div>
         </>
