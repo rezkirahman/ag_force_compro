@@ -26,7 +26,6 @@ const menuItem = [
 
 export default function Index() {
     const [open, setOpen] = useState(false)
-    const [device, setDevice] = useState("")
 
 
     const ModalMenu = () => {
