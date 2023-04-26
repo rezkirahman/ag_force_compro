@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function name() {
-    const router = useRouter()
+    const router = useRouter
     return (
         <div className="bg-primary w-full h-1/2 flex flex-col items-center">
             <div className="container mx-auto py-8 px-2">
