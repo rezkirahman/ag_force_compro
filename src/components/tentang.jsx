@@ -2,7 +2,7 @@ import Image from "next/image"
 export default function Index() {
     return (
         <>
-            <div className="space-y-5 container mx-auto lg:grid lg:grid-cols-2 lg:gap lg:h-screen flex flex-col items-center">
+            <div className="space-y-5 container mx-auto lg:grid lg:grid-cols-2 lg:gap lg:h-screen flex flex-col items-center px-2">
                 <div className="space-y-6">
                     <h3 className="text-center text-[22px] font-semibold lg:text-[64px] lg:text-left">
                         Aman dengan <span className="text-primary">AG FORCE</span>
@@ -14,7 +14,7 @@ export default function Index() {
                     </div>
                 </div>
                 <div className="">
-                    <Image src={'/tentang.png'} width={300} height={0} className="w-1/2 lg:w-4/5 mx-auto grow" alt="cs" />
+                    <Image src={'/tentang.png'} width={300} height={0} className="w-4/5 lg:w-4/5 mx-auto grow" alt="cs" />
                 </div>
             </div>
         </>

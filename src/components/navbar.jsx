@@ -64,7 +64,7 @@ export default function Index() {
     return (
         <>
             <div className="bg-white w-full fixed top-0 z-50">
-                <div className="container mx-auto py-3">
+                <div className="container mx-auto py-3 px-2">
                     <div className="flex items-center justify-between gap-10 w-full sr-only lg:not-sr-only lg:h-auto">
                         <Link href='/'>
                             <Image src={'/logo.png'} width={400} height={100} alt="logo" className="w-[132px] h-auto cursor-pointer" />
