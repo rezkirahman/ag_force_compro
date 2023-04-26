@@ -12,7 +12,7 @@ export default function Index() {
                                 <h3 className="font-semibold lg:text-2xl xl:text-5xl">Kontak Kami</h3>
                                 <h3 className="text-[12px] lg:text-xl xl:text-2xl">
                                     Ada pertanyaan atau permasalahan seputar AG Force?<br />
-                                    Kirim melalui email: <span className="text-primary cursor-pointer">admin.mail@aig-id.com</span>
+                                    Kirim melalui email: <Link href='mailto:admin.mail@aig-id.com' target='_blank'><span className="text-primary cursor-pointer hover:underline">admin.mail@aig-id.com</span></Link>
                                 </h3>
                             </div>
                             <div className="xl:w-[200px]">

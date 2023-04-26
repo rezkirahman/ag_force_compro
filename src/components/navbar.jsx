@@ -43,7 +43,8 @@ export default function Index() {
                             scroll={false}
                         >
                             <button
-                                className="bg-primary text-white font-semibold py-4 px-6 rounded-full text-[16px] ring-2 ring-primary hover:bg-white hover:text-primary transition-all duration-300"
+                                className="w-full bg-white text-primary font-semibold py-4 px-6 rounded-full text-[16px]"
+                                onClick={() => setOpen(false)}
                             >
                                 Unduh Sekarang
                             </button>
@@ -94,7 +95,7 @@ export default function Index() {
                                 <Image src={'/logo.png'} width={400} height={100} alt="logo" className="w-[132px] h-auto cursor-pointer" />
                             </Link>
                             <div onClick={() => setOpen(!open)} className="text-white bg-primary p-1 text-[24px] rounded-md cursor-pointer" >
-                                <Icon icon={open ? "material-symbols:close-rounded" : "gg:menu-left-alt"} className="rotate-180" />
+                                <Icon icon={open ? "material-symbols:close-rounded" : "gg:menu-left-alt"} className="rotate-180 transition-all duration-300" />
                             </div>
                         </div>
                     </div>
