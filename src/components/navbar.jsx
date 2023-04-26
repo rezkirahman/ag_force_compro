@@ -39,19 +39,29 @@ export default function Index() {
                                 <button className="text-[22px] hover:text-white transition-all duration-300">{data.name}</button>
                             </Link>
                         ))}
+                        <Link
+                            href={isAndroid ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : (isIOS ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : '#kontak')}
+                            scroll={false}
+                        >
+                            <button
+                                className="bg-primary text-white font-semibold py-4 px-6 rounded-full text-[16px] ring-2 ring-primary hover:bg-white hover:text-primary transition-all duration-300"
+                            >
+                                Unduh Sekarang
+                            </button>
+                        </Link>
                     </div>
                 </div>
             )
         }
     }
 
-    if (isAndroid) {
-        console.log('android');
-    } else if (isIOS) {
-        console.log('iOS');
-    } else {
-        console.log('gatau');
-    }
+    // if (isAndroid) {
+    //     console.log('android');
+    // } else if (isIOS) {
+    //     console.log('iOS');
+    // } else {
+    //     console.log('gatau');
+    // }
     return (
         <>
             <div className="bg-white w-full fixed top-0 z-50">
