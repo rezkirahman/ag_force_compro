@@ -19,7 +19,7 @@ export default function Index() {
                     </div>
                 </div>
                 <div className="">
-                    <div className="container bg-white mx-auto space-y-8 px-4 py-6 sm:px-6 md:px-8 lg:px-10">
+                    <div className="container bg-white mx-auto space-y-8 px-4 py-6 sm:px-6 md:px-8 lg:px-10 shadow-lg">
                         <div>
                             <h3>
                                 <strong className="text-xl text-primary">1. Introduction</strong>
