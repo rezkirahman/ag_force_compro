@@ -1,11 +1,9 @@
 import Head from 'next/head'
 import Image from "next/image";
 import Link from 'next/link';
-import { useRouter } from "next/router";
 import { useState } from 'react';
 
 export default function Index() {
-    const router = useRouter()
     return (
         <>
             <div className="bg-slate-100 space-y-6 relative">
@@ -167,9 +165,9 @@ export default function Index() {
                 <div className="bg-white py-4">
                     <div className="container w-full py-3 mx-auto sm:px-6 md:px-8 lg:px-10">
                         <div>
-                            <button onClick={() => router.push('/')}>
+                            <Link href='/'>
                                 <Image src={'/logo.png'} width={132} height={132} alt="logo" />
-                            </button>
+                            </Link>
                         </div>
                     </div>
                     <h3 className='text-[12px] text-center'>Copyright© 2022 AG Force. All Rights Reserved.</h3>
