@@ -12,7 +12,7 @@ export default function Index() {
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 </Head>
                 <div className='bg-primary'>
-                    <div className='bg-primary text-white container mx-auto sm:px-6 md:px-8 lg:px-10 py-6'>
+                    <div className='text-white container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 py-6'>
                         <h3 className='text-2xl font-bold'>AG Force</h3>
                         <h3 className='tracking-normal text-lg'>Terms of Service.</h3>
                     </div>
@@ -163,10 +163,10 @@ export default function Index() {
                     </div>
                 </div>
                 <div className="bg-white py-4">
-                    <div className="container w-full py-3 mx-auto sm:px-6 md:px-8 lg:px-10">
+                    <div className="container w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-10 py-6">
                         <div>
                             <Link href='/'>
-                                <Image src={'/logo.png'} width={132} height={132} alt="logo" />
+                                <Image src={'/logo.png'} width={132} height={132} alt="logo" className='mx-auto '/>
                             </Link>
                         </div>
                     </div>
