@@ -26,34 +26,31 @@ const menuItem = [
 
 export default function Index() {
     const [open, setOpen] = useState(false)
-
-
     const ModalMenu = () => {
-        if (open) {
-            return (
-                <div className="w-full h-auto">
-                    <div className="flex flex-col text-white m-3 space-y-6">
-                        {menuItem.map((data, i) => (
-                            <Link href={data.link} key={i} scroll={false} onClick={() => setOpen(false)}>
-                                <button className="text-[22px] hover:text-white transition-all duration-300">{data.name}</button>
-                            </Link>
-                        ))}
-                        <Link
-                            href={isAndroid ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : (isIOS ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : '#kontak')}
-                            scroll={false}
-                        >
-                            <button
-                                className="w-full bg-white text-primary font-semibold py-4 px-6 rounded-full text-[16px]"
-                                onClick={() => setOpen(false)}
-                            >
-                                Unduh Sekarang
-                            </button>
+        return (
+            <div className={`${open ? 'w-full h-full' : 'h-0 overflow-clip'} fixed bg-white bg-opacity-80 transition-all duration-300 ease-in-out`} onClick={() => setOpen(false)}>
+                <div className="flex flex-col text-white p-3 space-y-6 bg-primary transition-all" onClick={e => e.stopPropagation()}>
+                    {menuItem.map((data, i) => (
+                        <Link href={data.link} key={i} scroll={false} onClick={() => setOpen(false)}>
+                            <button className="text-[22px] hover:text-white transition-all duration-300">{data.name}</button>
                         </Link>
-                    </div>
+                    ))}
+                    <Link
+                        href={isAndroid ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : (isIOS ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : '#kontak')}
+                        scroll={false}
+                    >
+                        <button
+                            className="w-full bg-white text-primary font-semibold py-4 px-6 rounded-full text-[16px]"
+                            onClick={() => setOpen(false)}
+                        >
+                            Unduh Sekarang
+                        </button>
+                    </Link>
                 </div>
-            )
-        }
+            </div>
+        )
     }
+
 
     // if (isAndroid) {
     //     console.log('android');
@@ -101,9 +98,9 @@ export default function Index() {
                             </div>
                         </div>
                     </div>
-                    <div className={`${open ? "w-full" : "w-0"} bg-primary absolute transition-all duration-300 ease-in-out infinite`}>
-                        <ModalMenu />
-                    </div>
+
+                    <ModalMenu />
+
                 </div>
             </div>
         </>

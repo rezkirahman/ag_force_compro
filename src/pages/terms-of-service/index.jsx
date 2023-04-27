@@ -2,12 +2,13 @@ import Head from 'next/head'
 import Image from "next/image";
 import Link from 'next/link';
 import { useRouter } from "next/router";
+import { useState } from 'react';
 
 export default function Index() {
     const router = useRouter()
     return (
         <>
-            <div className="bg-slate-100 space-y-6">
+            <div className="bg-slate-100 space-y-6 relative">
                 <Head>
                     <title>AG Force | Terms of Service</title>
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
