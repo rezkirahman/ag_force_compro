@@ -17,7 +17,7 @@ export default function Index() {
                                         Hubungi melalui email: <Link href='mailto:admin.mail@aig-id.com' target='_blank'><span className="text-primary cursor-pointer hover:underline">admin.mail@aig-id.com</span></Link>
                                     </h3>
                                     <h3>
-                                        Hubungi melalui WhatsApp: <Link href='https://wa.me/+6282129819050' target='_blank'><span className="text-primary break-keep cursor-pointer hover:underline">+62 821-2981-9050</span></Link>
+                                        Hubungi melalui WhatsApp: <Link href='https://wa.me/+6282129819050' target='_blank'><span className="text-primary break-keep cursor-pointer slashed-zero hover:underline">+62 821-2981-9050</span></Link>
                                     </h3>
                                 </div>
 

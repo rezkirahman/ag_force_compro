@@ -16,7 +16,9 @@ export default function name() {
                         className="bg-white rounded-full py-4 px-6 ring-2 ring-white text-primary font-semibold hover:bg-primary hover:text-white transition-all duration-300"
                         scroll={false}
                     >
-                        Unduh Sekarang
+                        <button>
+                            Unduh Sekarang
+                        </button>
                     </Link>
                 </div>
                 <div className="space-y-5 lg:space-y-0 text-white mt-8 lg:flex lg:items-center lg:justify-between">
