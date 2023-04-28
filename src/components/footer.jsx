@@ -11,15 +11,15 @@ export default function name() {
                     <div className="bg-white">
                         <Image src={'/logo.png'} width={400} height={100} alt="" className="w-[74px] h-auto lg:w-[140px]" />
                     </div>
-                    <Link
-                        href={isAndroid ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : (isIOS ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : '#kontak')}
-                        className="bg-white rounded-full py-4 px-6 ring-2 ring-white text-primary font-semibold hover:bg-primary hover:text-white transition-all duration-300"
-                        scroll={false}
-                    >
-                        <button>
+                    <button>
+                        <Link
+                            href={isAndroid ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : (isIOS ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : '#kontak')}
+                            className="bg-white rounded-full py-4 px-6 ring-2 ring-white text-primary font-semibold hover:bg-primary hover:text-white transition-all duration-300"
+                            scroll={false}
+                        >
                             Unduh Sekarang
-                        </button>
-                    </Link>
+                        </Link>
+                    </button>
                 </div>
                 <div className="space-y-5 lg:space-y-0 text-white mt-8 lg:flex lg:items-center lg:justify-between">
                     <Link

@@ -10,8 +10,8 @@ export default function Index() {
                         <div className="bg-blue-100 p-4 mx-auto rounded-2xl flex items-center justify-between lg:px-16 lg:p-10">
                             <div className="space-y-1 w-2/3 xl:space-y-5">
                                 <h3 className="font-semibold lg:text-2xl xl:text-5xl">Kontak Kami</h3>
-                                <div>
-                                    <h3 className="text-[12px] lg:text-xl xl:text-2xl">
+                                <div className="text-[12px] lg:text-xl xl:text-2xl">
+                                    <h3>
                                         Ada pertanyaan atau permasalahan seputar AG Force?</h3>
                                     <h3>
                                         Hubungi melalui email: <Link href='mailto:admin.mail@aig-id.com' target='_blank'><span className="text-primary cursor-pointer hover:underline">admin.mail@aig-id.com</span></Link>
