@@ -42,12 +42,23 @@ export default function name() {
                             admin.mail@aig-id.com
                         </h3>
                     </Link>
+                    <Link
+                        href='https://wa.me/+6282129819050'
+                        target="_blank"
+                        className="flex items-center gap-3">
+                        <div className="w-8">
+                            <Icon icon="material-symbols:call" className="text-[32px]" />
+                        </div>
+                        <h3 className="text-[14px] hover:underline">
+                            +62 821-2981-9050
+                        </h3>
+                    </Link>
                     <div>
                         <Link
                             href='/terms-of-service'
                             target='_blank'
                         >
-                            <h3 className="text-[14px] hover:underline">Terms of Service</h3>
+                            <h3 className="text-[14px] hover:underline">Syarat & Ketentuan</h3>
                         </Link>
                     </div>
                     <div>
