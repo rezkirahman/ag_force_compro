@@ -11,7 +11,7 @@ export default function Index() {
                     <title>AG Force | Terms of Service</title>
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 </Head>
-                <div className='bg-primary'>
+                <div className='bg-primary fixed top-0 left-0 right-0 z-50'>
                     <div className='container text-white flex items-end justify-between mx-auto px-4 sm:px-6 md:px-8 lg:px-10 py-6'>
                         <div className=''>
                             <h3 className='text-2xl font-bold'>AG Force</h3>
@@ -24,7 +24,7 @@ export default function Index() {
                         </Link>
                     </div>
                 </div>
-                <div className="">
+                <div className="pt-[108px] relative" id='top'>
                     <div className="container bg-white mx-auto space-y-8 px-4 py-6 sm:px-6 md:px-8 lg:px-10 shadow-lg">
                         <div>
                             <h3>
