@@ -57,7 +57,7 @@ export default function name() {
                     </Link>
                     <div>
                         <Link
-                            href='/terms-of-service'
+                            href='/legal/terms-of-service'
                             target='_blank'
                         >
                             <h3 className="text-[14px] hover:underline">Syarat & Ketentuan</h3>
@@ -65,7 +65,7 @@ export default function name() {
                     </div>
                     <div>
                         <Link
-                            href='/terms-of-service'
+                            href='/legal/privacy-policy'
                             target='_blank'
                         >
                             <h3 className="text-[14px] hover:underline">Kebijakan Privasi</h3>
