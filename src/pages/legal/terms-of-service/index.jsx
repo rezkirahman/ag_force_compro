@@ -1,7 +1,7 @@
+import ScrollButton from '@/components/scrollbutton';
 import Head from 'next/head'
 import Image from "next/image";
 import Link from 'next/link';
-import { useState } from 'react';
 
 export default function Index() {
     return (
@@ -24,7 +24,8 @@ export default function Index() {
                         </Link>
                     </div>
                 </div>
-                <div className="pt-[108px] relative" id='top'>
+                <ScrollButton link="/legal/terms-of-service"/>
+                <div className="pt-[108px] relative">
                     <div className="container bg-white mx-auto space-y-8 px-4 py-6 sm:px-6 md:px-8 lg:px-10 shadow-lg">
                         <div>
                             <h3>

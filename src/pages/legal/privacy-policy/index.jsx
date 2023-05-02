@@ -1,12 +1,14 @@
+import ScrollButton from '@/components/scrollbutton';
+import { Icon } from '@iconify/react';
 import Head from 'next/head'
 import Image from "next/image";
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react'
 
 export default function Index() {
     return (
         <>
-            <div className="bg-slate-100 space-y-6 relative">
+            <div className="bg-slate-100 space-y-6 relative smoot">
                 <Head>
                     <title>AG Force | Privacy Policy</title>
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -24,7 +26,8 @@ export default function Index() {
                         </Link>
                     </div>
                 </div>
-                <div className="pt-[108px] relative" id='top'>
+                <ScrollButton link="/legal/privacy-policy"/>
+                <div className="pt-[108px] relative">
                     <div className="container bg-white mx-auto space-y-8 px-4 py-6 sm:px-6 md:px-8 lg:px-10 shadow-lg">
                         <div>
                             <strong className="text-xl text-primary">1. Introduction</strong>
