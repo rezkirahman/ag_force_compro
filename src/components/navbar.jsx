@@ -2,7 +2,6 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { isAndroid, isIOS } from 'react-device-detect';
 
 const menuItem = [
     {
@@ -24,7 +23,7 @@ const menuItem = [
     },
 ]
 
-export default function Index() {
+export default function Index(props) {
     const [open, setOpen] = useState(false)
     const ModalMenu = () => {
         return (
@@ -36,7 +35,7 @@ export default function Index() {
                         </Link>
                     ))}
                     <Link
-                        href={isAndroid ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : (isIOS ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : '#kontak')}
+                        href={props.isAndroid ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : (props.isIOS ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : '#kontak')}
                         scroll={false}
                     >
                         <button
@@ -71,11 +70,11 @@ export default function Index() {
                             <div className="flex items-center gap-[60px]">
                                 {menuItem.map((data, i) => (
                                     <Link href={data.link} key={i} scroll={false}>
-                                        <button className="text-[22px] text-slate-500 hover:text-primary font-semibold transition-all duration-200">{data.name}</button>
+                                        <button className="text-[18px] text-slate-400 hover:text-primary font-semibold transition-all">{data.name}</button>
                                     </Link>
                                 ))}
                                 <Link
-                                    href={isAndroid ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : (isIOS ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : '#kontak')}
+                                    href={props.isAndroid ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : (props.isIOS ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : '#kontak')}
                                     scroll={false}
                                 >
                                     <button

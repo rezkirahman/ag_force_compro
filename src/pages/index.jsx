@@ -6,6 +6,7 @@ import Tentang from '../components/tentang'
 import Fitur from '../components/fitur'
 import Kontak from '../components/kontak'
 import Footer from '../components/footer'
+import { isAndroid, isIOS } from "react-device-detect";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
           <title>AG Force</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <Navbar />
+        <Navbar isAndroid={isAndroid} isIOS={isIOS} />
         <section id='beranda'>
           <Beranda />
         </section>
@@ -29,7 +30,7 @@ export default function Home() {
         <section id='kontak'>
           <Kontak />
         </section>
-        <Footer />
+        <Footer isAndroid={isAndroid} isIOS={isIOS} />
       </div>
     </main>
   )

@@ -1,9 +1,8 @@
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
-import { isAndroid, isIOS } from "react-device-detect";
 
-export default function name() {
+export default function name(props) {
     return (
         <div className="bg-primary w-full h-1/2 flex flex-col items-center">
             <div className="container mx-auto py-8 px-2">
@@ -13,7 +12,7 @@ export default function name() {
                     </div>
                     <button>
                         <Link
-                            href={isAndroid ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : (isIOS ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : '#kontak')}
+                            href={props.isAndroid ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : (props.isIOS ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : '#kontak')}
                             className="bg-white rounded-full py-4 px-6 ring-2 ring-white text-primary font-semibold hover:bg-primary hover:text-white transition-all duration-300"
                             scroll={false}
                         >
