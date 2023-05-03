@@ -75,8 +75,9 @@ export default function Index(props) {
                                 ))}
                                 <Link
                                     className="bg-primary text-white font-semibold py-4 px-6 rounded-full text-[16px] ring-2 ring-primary hover:bg-white hover:text-primary transition-all duration-300"
-                                    href={props.isAndroid ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : (props.isIOS ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : '#kontak')}
+                                    href='https://play.google.com/store/apps/details?id=com.ag.agforce&pli=1'
                                     scroll={false}
+                                    target="_blank"
                                 >
                                     Unduh Sekarang
                                 </Link>
