@@ -13,7 +13,7 @@ export default function name(props) {
                         <Image src={'/logo.png'} width={400} height={100} alt="" className="w-[92px] h-auto lg:w-[140px]" />
                     </div>
                     <Link
-                        href={isAndroid ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : (isIOS ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : '')}
+                        href={isAndroid ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : (isIOS ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : '#kontak')}
                         className="bg-white text-[12px] lg:text-base lg:py-4 lg:px-6 rounded-full py-3 px-4 ring-2 ring-white text-primary font-semibold hover:bg-primary hover:text-white transition-all duration-300"
                         scroll={false}
                     >
