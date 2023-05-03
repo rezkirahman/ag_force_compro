@@ -39,7 +39,7 @@ export default function Index() {
         <>
             <div className="bg-blue-50 py-[35px] lg:h-screen flex flex-col items-center justify-center gap-10">
                 <div className="mx-auto">
-                    <h3 className="text-center text-[22px] font-semibold lg:text-5xl">
+                    <h3 className="text-center text-xl font-semibold lg:text-4xl">
                         Fitur andalan <span className="text-primary">AG FORCE</span>
                     </h3>
                 </div>

@@ -27,11 +27,11 @@ export default function Index(props) {
     const [open, setOpen] = useState(false)
     const ModalMenu = () => {
         return (
-            <div className={`${open ? 'w-full h-full' : 'h-0 overflow-clip'} fixed bg-white bg-opacity-80 transition-all duration-300 ease-in-out`} onClick={() => setOpen(false)}>
+            <div className={`${open ? 'scale-100' : 'scale-0'} w-full h-full fixed bg-white bg-opacity-80 transition-all`} onClick={() => setOpen(false)}>
                 <div className="flex flex-col text-white p-3 space-y-6 bg-primary transition-all" onClick={e => e.stopPropagation()}>
                     {menuItem.map((data, i) => (
                         <Link href={data.link} key={i} scroll={false} onClick={() => setOpen(false)}>
-                            <button className="text-[22px] hover:text-white transition-all duration-300">{data.name}</button>
+                            <button className="text-[18px] hover:text-white transition-all duration-300">{data.name}</button>
                         </Link>
                     ))}
                     <Link
