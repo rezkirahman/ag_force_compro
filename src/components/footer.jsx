@@ -1,6 +1,8 @@
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
+import { isAndroid, isIOS } from "react-device-detect";
+
 
 export default function name(props) {
     return (
@@ -10,13 +12,13 @@ export default function name(props) {
                     <div className="bg-white">
                         <Image src={'/logo.png'} width={400} height={100} alt="" className="w-[92px] h-auto lg:w-[140px]" />
                     </div>
-                        <Link
-                            href={props.isAndroid ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : (props.isIOS ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : '')}
-                            className="bg-white text-[12px] lg:text-base lg:py-4 lg:px-6 rounded-full py-3 px-4 ring-2 ring-white text-primary font-semibold hover:bg-primary hover:text-white transition-all duration-300"
-                            scroll={false}
-                        >
-                            Unduh Sekarang
-                        </Link>
+                    <Link
+                        href={isAndroid ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : (isIOS ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : '')}
+                        className="bg-white text-[12px] lg:text-base lg:py-4 lg:px-6 rounded-full py-3 px-4 ring-2 ring-white text-primary font-semibold hover:bg-primary hover:text-white transition-all duration-300"
+                        scroll={false}
+                    >
+                        Unduh Sekarang
+                    </Link>
                 </div>
                 <div className="space-y-5 lg:space-y-0 text-white mt-8 lg:flex lg:items-center lg:justify-between">
                     <Link
