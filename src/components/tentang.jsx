@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Link from "next/link";
+import { isAndroid, isIOS } from "react-device-detect";
 export default function Index() {
     return (
         <>
@@ -16,6 +18,13 @@ export default function Index() {
                 <div className="">
                     <Image src={'/tentang.png'} priority width={300} height={0} className="w-4/5 lg:w-4/5 mx-auto grow" alt="cs" />
                 </div>
+                <Link
+                    href={isAndroid ? 'https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id' : (isIOS ? 'https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios' : '#kontak')}
+                    className="bg-white text-[12px] lg:text-base lg:py-4 lg:px-6 rounded-full py-3 px-4 ring-2 ring-white text-primary font-semibold hover:bg-primary hover:text-white transition-all duration-300"
+                    scroll={false}
+                >
+                    Unduh Sekarang
+                </Link>
             </div>
         </>
     )
