@@ -31,8 +31,8 @@ export default function Index() {
                         <Image src={'/kontak-left.png'} width={400} height={0} alt="image-left" className="w-[72px] sm:w-[120px] md:w-[160px] lg:w-[280px]" />
                         <div className="text-center space-y-2 lg:space-y-4">
                             <h3 className="font-semibold md:text-xl lg:text-3xl xl:text-5xl">Unduh<span className="text-primary"> AG FORCE </span>Sekarang</h3>
-                            <h3 className="text-[10px] md:text-base lg:text-xl xl:text-2xl">Gratis aplikasinya, kerja semakin aman dan tenang.</h3>
-                            <div className="flex items-center justify-center gap-2">
+                            <h3 className="text-sm lg:text-xl xl:text-2xl">Gratis aplikasinya, kerja semakin aman dan tenang.</h3>
+                            <div className="flex items-center justify-center gap-2 sr-only lg:not-sr-only">
                                 <Link
                                     href='https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios'
                                     target='_blank'
@@ -48,6 +48,22 @@ export default function Index() {
                             </div>
                         </div>
                         <Image src={'/kontak-right.png'} width={400} height={0} alt="image-right" className="w-[72px] sm:w-[120px] md:w-[160px] lg:w-[280px]" />
+                    </div>
+                    <div className="not-sr-only lg:sr-only px-2">
+                        <div className="grid grid-cols-2 items-center justify-center gap-2">
+                            <Link
+                                href='https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios'
+                                target='_blank'
+                            >
+                                <Image src={'/appStore.svg'} width={400} height={0} alt="" className="w-full h-auto cursor-pointer" />
+                            </Link>
+                            <Link
+                                href='https://play.google.com/store/apps/details?id=com.ag.agforce&hl=id'
+                                target='_blank'
+                            >
+                                <Image src={'/googlePlay.svg'} width={400} height={0} alt="" className="w-full h-auto cursor-pointer" />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
