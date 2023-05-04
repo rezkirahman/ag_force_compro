@@ -49,7 +49,7 @@ export default function Index() {
                         </div>
                         <Image src={'/kontak-right.png'} width={400} height={0} alt="image-right" className="w-[72px] sm:w-[120px] md:w-[160px] lg:w-[280px]" />
                     </div>
-                    <div className="not-sr-only lg:sr-only px-2">
+                    <div className="not-sr-only lg:sr-only px-2 pt-4">
                         <div className="grid grid-cols-2 items-center justify-center gap-2">
                             <Link
                                 href='https://apps.apple.com/us/app/ag-force/id6444120625bit.ly/agforceios'
