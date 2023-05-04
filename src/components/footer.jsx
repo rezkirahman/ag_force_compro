@@ -40,7 +40,7 @@ export default function name(props) {
                             <Icon icon="material-symbols:mail-rounded" className="text-[32px]" />
                         </div>
                         <h3 className="text-[14px] hover:underline">
-                            admin.mail@aig-id.com
+                            cs@aig-id.com
                         </h3>
                     </Link>
                     <Link
