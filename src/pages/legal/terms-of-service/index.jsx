@@ -18,7 +18,7 @@ export default function Index() {
                             <h3 className='tracking-normal text-lg'>Terms of Service.</h3>
                         </div>
                         <Link href='/legal/privacy-policy'>
-                            <button className='py-2 px-4 rounded-xl border-2 border-white border-opacity-50 hover:bg-white hover:border-transparent hover:bg-opacity-20 text-[14px] transition-all'>
+                            <button className='py-2 px-4 rounded-xl font-semibold border-2 border-white border-opacity-50 hover:bg-white hover:border-transparent hover:bg-opacity-20 text-[14px] transition-all'>
                                 Privacy Policy
                             </button>
                         </Link>
